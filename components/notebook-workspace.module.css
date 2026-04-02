@@ -1,0 +1,802 @@
+.pageShell {
+  min-height: 100dvh;
+  padding: 24px;
+}
+
+.workspaceCard {
+  position: relative;
+  min-height: calc(100dvh - 48px);
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 32px;
+  background:
+    linear-gradient(180deg, rgba(255, 253, 250, 0.96) 0%, rgba(255, 250, 244, 0.92) 100%);
+  box-shadow: var(--shadow);
+  overflow: clip;
+}
+
+.workspaceCard::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.48), transparent 22%),
+    radial-gradient(circle at top right, rgba(39, 105, 93, 0.08), transparent 22%);
+  pointer-events: none;
+}
+
+.topBar {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.brandBlock {
+  min-width: 0;
+}
+
+.brandEyebrow {
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.brandTitleRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.brandTitleRow h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 4vw, 2.7rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.syncBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.68);
+  font-size: 0.88rem;
+}
+
+.syncBadge svg {
+  flex: none;
+}
+
+.syncBadge[data-state="saving"] svg {
+  animation: spin 1s linear infinite;
+}
+
+.syncBadge[data-state="error"] {
+  color: var(--danger);
+  border-color: rgba(184, 74, 74, 0.22);
+  background: rgba(184, 74, 74, 0.08);
+}
+
+.modeSwitch {
+  position: relative;
+  z-index: 1;
+  display: inline-grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.74);
+  backdrop-filter: blur(12px);
+}
+
+.modeButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 16px;
+  border-radius: 14px;
+  color: var(--muted);
+  font-size: 0.94rem;
+  font-weight: 600;
+  transition:
+    background-color 0.18s ease,
+    color 0.18s ease,
+    transform 0.18s ease;
+}
+
+.modeButton:hover,
+.modeButton:focus-visible {
+  color: var(--text);
+  background: rgba(39, 105, 93, 0.08);
+  outline: none;
+}
+
+.modeButton[data-active="true"] {
+  color: var(--text);
+  background: var(--surface-strong);
+  box-shadow: 0 12px 24px rgba(30, 26, 20, 0.08);
+}
+
+.contentArea,
+.loadingState,
+.setupState {
+  position: relative;
+  z-index: 1;
+}
+
+.loadingState,
+.setupState {
+  display: grid;
+  place-items: center;
+  min-height: calc(100dvh - 210px);
+}
+
+.loadingCard,
+.setupCard {
+  display: grid;
+  gap: 14px;
+  width: min(100%, 580px);
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.loadingCard {
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.loadingCard h2,
+.setupCard h2 {
+  margin: 0 0 6px;
+  font-size: 1.28rem;
+}
+
+.loadingCard p,
+.setupCard p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.setupEyebrow {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.notePanel,
+.todoPanel {
+  display: grid;
+  gap: 18px;
+}
+
+.panelMeta {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.panelMeta h2 {
+  margin: 0 0 5px;
+  font-size: 1.18rem;
+}
+
+.panelMeta p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.metaText {
+  color: var(--muted);
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.noteSurface {
+  position: relative;
+  min-height: clamp(60vh, 72dvh, 980px);
+  border: 1px solid rgba(58, 51, 42, 0.1);
+  border-radius: 28px;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(255, 253, 249, 0.98) 0%, rgba(255, 250, 244, 0.96) 100%);
+}
+
+.noteSurface::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, transparent 0, transparent 39px, rgba(58, 51, 42, 0.045) 40px),
+    linear-gradient(90deg, rgba(39, 105, 93, 0.12), rgba(39, 105, 93, 0.12));
+  background-size: 100% 40px, 1px 100%;
+  background-position: 0 20px, 64px 0;
+  pointer-events: none;
+}
+
+.noteEditor {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: clamp(60vh, 72dvh, 980px);
+  padding: 28px 28px 28px 88px;
+  border: 0;
+  resize: none;
+  background: transparent;
+  color: var(--text);
+  line-height: 40px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.noteEditor::placeholder {
+  color: rgba(110, 103, 93, 0.62);
+}
+
+.summaryGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.summaryCard,
+.addCard,
+.listCard {
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.summaryCard {
+  display: grid;
+  gap: 8px;
+  padding: 20px 22px;
+}
+
+.summaryCard span {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.summaryCard strong {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  letter-spacing: -0.04em;
+}
+
+.addCard {
+  padding: 20px;
+}
+
+.addGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 180px auto;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+}
+
+.fieldLabel {
+  color: var(--muted);
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+.input {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 16px;
+  border: 1px solid rgba(58, 51, 42, 0.14);
+  border-radius: 16px;
+  background: var(--surface-strong);
+  color: var(--text);
+  transition:
+    border-color 0.18s ease,
+    box-shadow 0.18s ease,
+    transform 0.18s ease;
+}
+
+.input:hover,
+.input:focus-visible {
+  border-color: rgba(39, 105, 93, 0.34);
+  box-shadow: 0 0 0 4px rgba(39, 105, 93, 0.1);
+  outline: none;
+}
+
+.primaryButton,
+.secondaryButton,
+.ghostButton,
+.dangerButton,
+.iconButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 0 18px;
+  border-radius: 16px;
+  font-weight: 600;
+  transition:
+    transform 0.18s ease,
+    background-color 0.18s ease,
+    color 0.18s ease,
+    box-shadow 0.18s ease,
+    border-color 0.18s ease;
+}
+
+.primaryButton,
+.secondaryButton,
+.ghostButton,
+.dangerButton {
+  border: 1px solid transparent;
+}
+
+.primaryButton {
+  color: #fff;
+  background: linear-gradient(180deg, #2f786a 0%, #27695d 100%);
+  box-shadow: 0 18px 30px rgba(39, 105, 93, 0.18);
+}
+
+.primaryButton:hover,
+.primaryButton:focus-visible,
+.secondaryButton:hover,
+.secondaryButton:focus-visible,
+.ghostButton:hover,
+.ghostButton:focus-visible,
+.dangerButton:hover,
+.dangerButton:focus-visible,
+.iconButton:hover,
+.iconButton:focus-visible {
+  transform: translateY(-1px);
+  outline: none;
+}
+
+.primaryButton:disabled {
+  cursor: wait;
+  opacity: 0.72;
+  transform: none;
+}
+
+.secondaryButton {
+  width: fit-content;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.84);
+  border-color: var(--line);
+}
+
+.ghostButton {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.72);
+  border-color: var(--line);
+}
+
+.dangerButton {
+  color: #fff;
+  background: linear-gradient(180deg, #cb5d5d 0%, #b84a4a 100%);
+  box-shadow: 0 18px 30px rgba(184, 74, 74, 0.2);
+}
+
+.listCard {
+  overflow: hidden;
+}
+
+.emptyState {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 14px;
+  align-items: start;
+  padding: 28px;
+  color: var(--muted);
+}
+
+.emptyState h3 {
+  margin: 0 0 6px;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.emptyState p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.todoList {
+  display: grid;
+}
+
+.todoRow {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) 136px auto auto;
+  align-items: center;
+  gap: 14px;
+  min-height: 72px;
+  padding: 0 18px;
+  border-bottom: 1px solid rgba(58, 51, 42, 0.08);
+  transition: background-color 0.18s ease, opacity 0.18s ease;
+}
+
+.todoRow:last-child {
+  border-bottom: 0;
+}
+
+.todoRow:hover {
+  background: rgba(39, 105, 93, 0.035);
+}
+
+.todoRow[data-completed="true"] {
+  opacity: 0.6;
+}
+
+.todoRow[data-completed="true"] .todoTitle {
+  text-decoration: line-through;
+}
+
+.todoRow[data-busy="true"] {
+  opacity: 0.74;
+}
+
+.checkboxWrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+}
+
+.checkbox {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkboxVisual {
+  width: 22px;
+  height: 22px;
+  border: 1.5px solid rgba(58, 51, 42, 0.24);
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.88);
+  transition:
+    background-color 0.18s ease,
+    border-color 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.checkbox:focus-visible + .checkboxVisual,
+.checkbox:hover + .checkboxVisual {
+  border-color: rgba(39, 105, 93, 0.48);
+  box-shadow: 0 0 0 4px rgba(39, 105, 93, 0.1);
+}
+
+.checkbox:checked + .checkboxVisual {
+  border-color: var(--accent);
+  background:
+    linear-gradient(180deg, rgba(39, 105, 93, 0.16) 0%, rgba(39, 105, 93, 0.16) 100%),
+    var(--surface-strong);
+}
+
+.checkbox:checked + .checkboxVisual::after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 11px;
+  margin: 2px 0 0 7px;
+  border-right: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  transform: rotate(40deg);
+}
+
+.todoContent {
+  min-width: 0;
+}
+
+.todoTitle {
+  display: block;
+  color: var(--text);
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.todoMetaMobile {
+  display: none;
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 0.84rem;
+  font-family: var(--font-mono), "IBM Plex Mono", monospace;
+}
+
+.todoPrice {
+  text-align: right;
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 600;
+  font-family: var(--font-mono), "IBM Plex Mono", monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.iconButton {
+  width: 40px;
+  min-height: 40px;
+  padding: 0;
+  border: 1px solid rgba(58, 51, 42, 0.12);
+  background: rgba(255, 255, 255, 0.82);
+  color: var(--muted);
+}
+
+.iconButton:hover,
+.iconButton:focus-visible {
+  color: var(--text);
+  background: rgba(39, 105, 93, 0.08);
+}
+
+.inlineError {
+  margin: 12px 0 0;
+  color: var(--danger);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(24, 21, 18, 0.36);
+  backdrop-filter: blur(10px);
+}
+
+.modalCard {
+  width: min(100%, 720px);
+  max-height: min(88vh, 920px);
+  overflow: auto;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 28px;
+  background: rgba(255, 252, 247, 0.96);
+  box-shadow: 0 28px 64px rgba(20, 16, 11, 0.22);
+}
+
+.modalHeader h2 {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+}
+
+.modalHeader p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.modalBody {
+  margin-top: 20px;
+}
+
+.modalActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.modalFieldStack {
+  display: grid;
+  gap: 14px;
+}
+
+.confirmCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.confirmCard strong {
+  font-size: 1rem;
+}
+
+.confirmCard span {
+  color: var(--muted);
+  font-family: var(--font-mono), "IBM Plex Mono", monospace;
+}
+
+.conflictGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.conflictPane {
+  display: grid;
+  gap: 10px;
+  min-height: 240px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.conflictLabel {
+  color: var(--muted);
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+.conflictPane pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  line-height: 1.65;
+}
+
+.spinningIcon {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 980px) {
+  .pageShell {
+    padding: 16px;
+  }
+
+  .workspaceCard {
+    min-height: calc(100dvh - 32px);
+    padding: 22px;
+    border-radius: 28px;
+  }
+
+  .topBar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .modeSwitch {
+    width: fit-content;
+  }
+
+  .addGrid {
+    grid-template-columns: minmax(0, 1fr) 160px auto;
+  }
+}
+
+@media (max-width: 760px) {
+  .workspaceCard {
+    padding: 18px;
+    border-radius: 24px;
+  }
+
+  .brandTitleRow {
+    align-items: flex-start;
+  }
+
+  .summaryGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .panelMeta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .addGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .addGrid .primaryButton {
+    width: 100%;
+  }
+
+  .todoRow {
+    grid-template-columns: auto minmax(0, 1fr) auto auto;
+    gap: 12px;
+    min-height: 68px;
+    padding: 14px 16px;
+  }
+
+  .todoPrice {
+    display: none;
+  }
+
+  .todoMetaMobile {
+    display: block;
+  }
+
+  .noteSurface,
+  .noteEditor {
+    min-height: calc(100dvh - 240px);
+  }
+
+  .noteEditor {
+    padding: 22px 20px 24px 60px;
+    line-height: 34px;
+  }
+
+  .noteSurface::before {
+    background-position: 0 16px, 42px 0;
+    background-size: 100% 34px, 1px 100%;
+  }
+
+  .modalCard {
+    padding: 20px;
+    border-radius: 24px;
+  }
+
+  .conflictGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .pageShell {
+    padding: 12px;
+  }
+
+  .workspaceCard {
+    min-height: calc(100dvh - 24px);
+    padding: 16px;
+    border-radius: 22px;
+  }
+
+  .modeSwitch {
+    width: 100%;
+  }
+
+  .todoRow {
+    grid-template-columns: auto minmax(0, 1fr) 36px 36px;
+  }
+
+  .iconButton {
+    width: 36px;
+    min-height: 36px;
+  }
+
+  .modalActions {
+    flex-direction: column-reverse;
+  }
+
+  .ghostButton,
+  .dangerButton,
+  .primaryButton {
+    width: 100%;
+  }
+}
