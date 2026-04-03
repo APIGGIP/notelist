@@ -1,0 +1,203 @@
+﻿Diagnose log at 2026-04-03T08:17:14Z
+
+AppPath: C:\Users\corrt_u8ymkmj\AppData\Local\Programs\Git\mingw64\bin\git-credential-manager.exe
+InstallDir: C:\Users\corrt_u8ymkmj\AppData\Local\Programs\Git\mingw64\bin\
+Version: 2.6.1+786ab03440ddc82e807a97c0e540f5247e44cec6
+
+------------
+Diagnostic: Environment
+Skipped: False
+Success: True
+Exception: None
+Log:
+OSType: Windows
+OSVersion: 10.0 (build 26200)
+Reading environment variables... OK
+ Variables:
+HOMEPATH=\Users\corrt_u8ymkmj
+DriverData=C:\Windows\System32\Drivers\DriverData
+COMPUTERNAME=JOE-HP-NB3
+GIT_TRACE2_PARENT_SID=23d1140f-6f4f-4458-992b-65cd8d8d5cc5
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+OneDrive=C:\Users\corrt_u8ymkmj\OneDrive
+CODEX_THREAD_ID=019d4e70-b9c0-7331-b165-0ca47bf87aa8
+RegionCode=APJ
+TMP=C:\Users\CORRT_~1\AppData\Local\Temp
+LC_CTYPE=C.UTF-8
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL
+VSCODE_IPC_HOOK=\\.\pipe\11551f0c-1.113.0-main-sock
+GIT_EXEC_PATH=C:/Users/corrt_u8ymkmj/AppData/Local/Programs/Git/mingw64/libexec/git-core
+TEMP=C:\Users\CORRT_~1\AppData\Local\Temp
+LOCALAPPDATA=C:\Users\corrt_u8ymkmj\AppData\Local
+MSYSTEM=MINGW64
+SESSIONNAME=Console
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 154 Stepping 4, GenuineIntel
+__PSLockDownPolicy=0
+POSTHOG_API_KEY=phc_jZKK9l8y7YXMN4J5tT0Idkmr9RMZrIUlfVSiaKyTesv
+ProgramData=C:\ProgramData
+windir=C:\WINDOWS
+JAVA_HOME=C:\Program Files\Java\jdk-17
+USERDOMAIN=JOE-HP-NB3
+platformcode=KV
+PROCESSOR_REVISION=9a04
+EFC_20100_1592913036=1
+PROCESSOR_LEVEL=6
+NUMBER_OF_PROCESSORS=12
+TMPDIR=C:\Users\CORRT_~1\AppData\Local\Temp
+VSCODE_CODE_CACHE_PATH=C:\Users\corrt_u8ymkmj\AppData\Roaming\Code\CachedData\cfbea10c5ffb233ea9177d34726e6056e89913dc
+TESSDATA_PREFIX=C:\Users\corrt_u8ymkmj\scoop\persist\tesseract\tessdata
+ProgramFiles(x86)=C:\Program Files (x86)
+PUBLIC=C:\Users\Public
+VSCODE_NLS_CONFIG={"userLocale":"zh-tw","osLocale":"zh-tw","resolvedLanguage":"zh-tw","defaultMessagesFile":"C:\\Users\\corrt_u8ymkmj\\AppData\\Local\\Programs\\Microsoft VS Code\\cfbea10c5f\\resources\\app\\out\\nls.messages.json","languagePack":{"translationsConfigFile":"C:\\Users\\corrt_u8ymkmj\\AppData\\Roaming\\Code\\clp\\113da71613d6849c8dac4dc15fc612fb.zh-tw\\tcf.json","messagesFile":"C:\\Users\\corrt_u8ymkmj\\AppData\\Roaming\\Code\\clp\\113da71613d6849c8dac4dc15fc612fb.zh-tw\\cfbea10c5ffb233ea9177d34726e6056e89913dc\\nls.messages.json","corruptMarkerFile":"C:\\Users\\corrt_u8ymkmj\\AppData\\Roaming\\Code\\clp\\113da71613d6849c8dac4dc15fc612fb.zh-tw\\corrupted.info"},"locale":"zh-tw","availableLanguages":{"*":"zh-tw"},"_languagePackId":"113da71613d6849c8dac4dc15fc612fb.zh-tw","_languagePackSupport":true,"_translationsConfigFile":"C:\\Users\\corrt_u8ymkmj\\AppData\\Roaming\\Code\\clp\\113da71613d6849c8dac4dc15fc612fb.zh-tw\\tcf.json","_cacheRoot":"C:\\Users\\corrt_u8ymkmj\\AppData\\Roaming\\Code\\clp\\113da71613d6849c8dac4dc15fc612fb.zh-tw","_resolvedLanguagePackCoreLocation":"C:\\Users\\corrt_u8ymkmj\\AppData\\Roaming\\Code\\clp\\113da71613d6849c8dac4dc15fc612fb.zh-tw\\cfbea10c5ffb233ea9177d34726e6056e89913dc","_corruptedFile":"C:\\Users\\corrt_u8ymkmj\\AppData\\Roaming\\Code\\clp\\113da71613d6849c8dac4dc15fc612fb.zh-tw\\corrupted.info"}
+FPS_BROWSER_USER_PROFILE_STRING=Default
+CommonProgramFiles=C:\Program Files (x86)\Common Files
+VSCODE_ESM_ENTRYPOINT=vs/workbench/api/node/extensionHostProcess
+CHROME_CRASHPAD_PIPE_NAME=\\.\pipe\crashpad_7584_RQIBZFAFTJTWWYPF
+ProgramFiles=C:\Program Files (x86)
+PLINK_PROTOCOL=ssh
+COLORTERM=truecolor
+EFC_20100_3789132940=1
+PATH=C:/Users/corrt_u8ymkmj/AppData/Local/Programs/Git/mingw64/libexec/git-core;C:\Users\corrt_u8ymkmj\AppData\Local\Programs\Git\mingw64\bin;C:\Users\corrt_u8ymkmj\AppData\Local\Programs\Git\usr\bin;C:\Users\corrt_u8ymkmj\bin;C:\Users\corrt_u8ymkmj\.codex\tmp\arg0\codex-arg0ulYvvp;C:\Users\corrt_u8ymkmj\AppData\Local\Programs\Microsoft VS Code;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\HP\HP One Agent;C:\Program Files\FFMPEG\bin;C:\Program Files\Java\jdk-17\bin;C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\corrt_u8ymkmj\anaconda3\Scripts;C:\Program Files\nodejs\;C:\Users\corrt_u8ymkmj\Desktop\ytdownload;C:\Users\corrt_u8ymkmj\Desktop\catch;C:\Users\corrt_u8ymkmj\scoop\shims;C:\Users\corrt_u8ymkmj\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\corrt_u8ymkmj\AppData\Local\Programs\Python\Python312\;C:\Users\corrt_u8ymkmj\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\corrt_u8ymkmj\AppData\Local\Programs\Python\Python313\;C:\Users\corrt_u8ymkmj\AppData\Local\Microsoft\WindowsApps;C:\Users\corrt_u8ymkmj\AppData\Local\Microsoft\WinGet\Packages\yt-dlp.yt-dlp_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\corrt_u8ymkmj\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\corrt_u8ymkmj\AppData\Local\Programs\Git\cmd;C:\Users\corrt_u8ymkmj\AppData\Local\Programs\Git\mingw64\bin;C:\Users\corrt_u8ymkmj\AppData\Local\Programs\Git\usr\bin;C:\Users\corrt_u8ymkmj\AppData\Local\Programs\Ollama;C:\Users\corrt_u8ymkmj\AppData\Roaming\npm;C:\Users\corrt_u8ymkmj\AppData\Local\Programs\Kiro\bin;C:\Users\corrt_u8ymkmj\AppData\Local\Programs\Antigravity\bin;c:\Users\corrt_u8ymkmj\.vscode\extensions\openai.chatgpt-26.325.31654-win32-x64\bin\windows-x86_64
+ChocolateyInstall=C:\ProgramData\chocolatey
+DEBUG=release
+OnlineServices=Online Services
+ProgramW6432=C:\Program Files
+HOME=C:\Users\corrt_u8ymkmj
+VSCODE_HANDLES_UNCAUGHT_ERRORS=true
+CODEX_INTERNAL_ORIGINATOR_OVERRIDE=codex_vscode
+CommonProgramW6432=C:\Program Files\Common Files
+ZES_ENABLE_SYSMAN=1
+LOGONSERVER=\\JOE-HP-NB3
+VSCODE_CWD=C:\Users\corrt_u8ymkmj\AppData\Local\Programs\Microsoft VS Code
+USERPROFILE=C:\Users\corrt_u8ymkmj
+SystemRoot=C:\WINDOWS
+EFC_20100_2283032206=1
+USERDOMAIN_ROAMINGPROFILE=JOE-HP-NB3
+TERM=xterm-256color
+APPDATA=C:\Users\corrt_u8ymkmj\AppData\Roaming
+HOMEDRIVE=C:
+RUST_LOG=warn
+VSCODE_PID=7584
+EFC_20100_2775293581=1
+PSModulePath=C:\Users\corrt_u8ymkmj\Documents\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+ELECTRON_RUN_AS_NODE=1
+USERNAME=corrt_u8ymkmj
+PROCESSOR_ARCHITEW6432=AMD64
+FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer
+PROCESSOR_ARCHITECTURE=x86
+SCROLLVIEW_PATH=C:\Users\corrt_u8ymkmj\scoop\persist\tesseract\tessdata
+OS=Windows_NT
+ComSpec=C:\WINDOWS\system32\cmd.exe
+ChocolateyLastPathUpdate=133941994995423514
+SystemDrive=C:
+VSCODE_CRASH_REPORTER_PROCESS_TYPE=extensionHost
+ALLUSERSPROFILE=C:\ProgramData
+
+
+------------
+Diagnostic: File system
+Skipped: False
+Success: True
+Exception: None
+Log:
+Temporary directory is 'C:\Users\corrt_u8ymkmj\AppData\Local\Temp\'...
+Checking basic file I/O...
+Writing to temporary file 'C:\Users\corrt_u8ymkmj\AppData\Local\Temp\4f9a4561a50f29ef5bd988ee'... OK
+Reading from temporary file 'C:\Users\corrt_u8ymkmj\AppData\Local\Temp\4f9a4561a50f29ef5bd988ee'... OK
+Deleting temporary file 'C:\Users\corrt_u8ymkmj\AppData\Local\Temp\4f9a4561a50f29ef5bd988ee'... OK
+Testing IFileSystem instance...
+UserHomePath: C:\Users\corrt_u8ymkmj
+UserDataDirectoryPath: C:\Users\corrt_u8ymkmj\.gcm
+GetCurrentDirectory(): C:\Users\corrt_u8ymkmj\Desktop\code\notesite
+
+------------
+Diagnostic: Networking
+Skipped: False
+Success: True
+Exception: None
+Log:
+Checking networking and HTTP stack...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com...Sending HEAD request to https://example.com... OK
+ OK
+Acquiring free TCP port... OK
+Testing local HTTP loopback connections...
+Creating new HTTP listener for http://localhost:53823/... OK
+Waiting for loopback connection... OK
+Writing response... OK
+Waiting for response data... OK
+Loopback connection data OK
+
+------------
+Diagnostic: Git
+Skipped: False
+Success: True
+Exception: None
+Log:
+Getting Git version... OK
+Git version is '2.48.1.windows.1'
+Locating current repository...Git repository at 'C:/Users/corrt_u8ymkmj/Desktop/code/notesite/.git'
+ OK
+Listing all Git configuration... OK
+Git configuration:
+file:C:/Users/corrt_u8ymkmj/AppData/Local/Programs/Git/etc/gitconfig	diff.astextplain.textconv=astextplain
+file:C:/Users/corrt_u8ymkmj/AppData/Local/Programs/Git/etc/gitconfig	filter.lfs.clean=git-lfs clean -- %f
+file:C:/Users/corrt_u8ymkmj/AppData/Local/Programs/Git/etc/gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Users/corrt_u8ymkmj/AppData/Local/Programs/Git/etc/gitconfig	filter.lfs.process=git-lfs filter-process
+file:C:/Users/corrt_u8ymkmj/AppData/Local/Programs/Git/etc/gitconfig	filter.lfs.required=true
+file:C:/Users/corrt_u8ymkmj/AppData/Local/Programs/Git/etc/gitconfig	http.sslbackend=schannel
+file:C:/Users/corrt_u8ymkmj/AppData/Local/Programs/Git/etc/gitconfig	core.autocrlf=true
+file:C:/Users/corrt_u8ymkmj/AppData/Local/Programs/Git/etc/gitconfig	core.fscache=true
+file:C:/Users/corrt_u8ymkmj/AppData/Local/Programs/Git/etc/gitconfig	core.symlinks=false
+file:C:/Users/corrt_u8ymkmj/AppData/Local/Programs/Git/etc/gitconfig	pull.rebase=false
+file:C:/Users/corrt_u8ymkmj/AppData/Local/Programs/Git/etc/gitconfig	credential.helper=manager
+file:C:/Users/corrt_u8ymkmj/AppData/Local/Programs/Git/etc/gitconfig	credential.https://dev.azure.com.usehttppath=true
+file:C:/Users/corrt_u8ymkmj/AppData/Local/Programs/Git/etc/gitconfig	init.defaultbranch=master
+file:C:/Users/corrt_u8ymkmj/.gitconfig	user.name=CRCRCRCRCRC
+file:C:/Users/corrt_u8ymkmj/.gitconfig	user.email=corrty12345678901234567890@gmail.com
+file:.git/config	core.repositoryformatversion=0
+file:.git/config	core.filemode=false
+file:.git/config	core.bare=false
+file:.git/config	core.logallrefupdates=true
+file:.git/config	core.symlinks=false
+file:.git/config	core.ignorecase=true
+file:.git/config	remote.origin.url=https://github.com/APIGGIP/notelist.git
+file:.git/config	remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+
+
+------------
+Diagnostic: Credential storage
+Skipped: False
+Success: True
+Exception: None
+Log:
+ICredentialStore instance is of type: CredentialStore
+Writing test credential... OK
+Reading test credential... OK
+Deleting test credential... OK
+
+------------
+Diagnostic: Microsoft authentication (AAD/MSA)
+Skipped: False
+Success: True
+Exception: None
+Log:
+Broker is not enabled.
+Flow type is: Auto
+Gathering MSAL token cache data... OK
+CacheDirectory: C:\Users\corrt_u8ymkmj\AppData\Local\.IdentityService
+CacheFileName: msal.cache
+CacheFilePath: C:\Users\corrt_u8ymkmj\AppData\Local\.IdentityService\msal.cache
+Creating cache helper... OK
+Verifying MSAL token cache persistence... OK
+
+------------
+Diagnostic: GitHub API
+Skipped: False
+Success: True
+Exception: None
+Log:
+Using 'https://github.com/' as API target.
+Querying '/meta' endpoint... OK
+

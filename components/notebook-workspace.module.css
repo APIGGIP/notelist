@@ -189,6 +189,10 @@
   gap: 18px;
 }
 
+.todoPanel {
+  gap: 12px;
+}
+
 .panelMeta {
   display: flex;
   align-items: flex-end;
@@ -257,61 +261,61 @@
 .summaryGrid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
+  gap: 10px;
 }
 
 .summaryCard,
 .addCard,
 .listCard {
   border: 1px solid var(--line);
-  border-radius: 24px;
+  border-radius: 20px;
   background: rgba(255, 255, 255, 0.8);
 }
 
 .summaryCard {
   display: grid;
-  gap: 8px;
-  padding: 20px 22px;
+  gap: 4px;
+  padding: 14px 18px;
 }
 
 .summaryCard span {
   color: var(--muted);
-  font-size: 0.88rem;
+  font-size: 0.82rem;
 }
 
 .summaryCard strong {
-  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-size: clamp(1.2rem, 2.2vw, 1.6rem);
   letter-spacing: -0.04em;
 }
 
 .addCard {
-  padding: 20px;
+  padding: 16px;
 }
 
 .addGrid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 180px auto;
-  gap: 12px;
-  margin-top: 18px;
+  grid-template-columns: minmax(0, 1fr) 160px auto;
+  gap: 10px;
+  margin-top: 12px;
 }
 
 .field {
   display: grid;
-  gap: 8px;
+  gap: 6px;
 }
 
 .fieldLabel {
   color: var(--muted);
-  font-size: 0.84rem;
+  font-size: 0.78rem;
   font-weight: 600;
 }
 
 .input {
   width: 100%;
-  min-height: 48px;
-  padding: 0 16px;
+  min-height: 42px;
+  padding: 0 14px;
   border: 1px solid rgba(58, 51, 42, 0.14);
-  border-radius: 16px;
+  border-radius: 14px;
   background: var(--surface-strong);
   color: var(--text);
   transition:
@@ -336,9 +340,9 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  min-height: 48px;
-  padding: 0 18px;
-  border-radius: 16px;
+  min-height: 42px;
+  padding: 0 16px;
+  border-radius: 14px;
   font-weight: 600;
   transition:
     transform 0.18s ease,
@@ -430,11 +434,11 @@
 
 .todoRow {
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr) 136px auto auto;
+  grid-template-columns: auto minmax(0, 1fr) 112px auto auto;
   align-items: center;
-  gap: 14px;
-  min-height: 72px;
-  padding: 0 18px;
+  gap: 12px;
+  min-height: 56px;
+  padding: 8px 16px;
   border-bottom: 1px solid rgba(58, 51, 42, 0.08);
   transition: background-color 0.18s ease, opacity 0.18s ease;
 }
@@ -464,8 +468,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
 }
 
 .checkbox {
@@ -477,10 +481,10 @@
 }
 
 .checkboxVisual {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   border: 1.5px solid rgba(58, 51, 42, 0.24);
-  border-radius: 7px;
+  border-radius: 6px;
   background: rgba(255, 255, 255, 0.88);
   transition:
     background-color 0.18s ease,
@@ -504,9 +508,9 @@
 .checkbox:checked + .checkboxVisual::after {
   content: "";
   display: block;
-  width: 6px;
-  height: 11px;
-  margin: 2px 0 0 7px;
+  width: 5px;
+  height: 10px;
+  margin: 1px 0 0 6px;
   border-right: 2px solid var(--accent);
   border-bottom: 2px solid var(--accent);
   transform: rotate(40deg);
@@ -519,6 +523,7 @@
 .todoTitle {
   display: block;
   color: var(--text);
+  font-size: 0.96rem;
   line-height: 1.4;
   word-break: break-word;
 }
@@ -534,15 +539,15 @@
 .todoPrice {
   text-align: right;
   color: var(--muted);
-  font-size: 0.92rem;
+  font-size: 0.86rem;
   font-weight: 600;
   font-family: var(--font-mono), "IBM Plex Mono", monospace;
   font-variant-numeric: tabular-nums;
 }
 
 .iconButton {
-  width: 40px;
-  min-height: 40px;
+  width: 34px;
+  min-height: 34px;
   padding: 0;
   border: 1px solid rgba(58, 51, 42, 0.12);
   background: rgba(255, 255, 255, 0.82);
@@ -695,7 +700,7 @@
   }
 
   .addGrid {
-    grid-template-columns: minmax(0, 1fr) 160px auto;
+    grid-template-columns: minmax(0, 1fr) 144px auto;
   }
 }
 
@@ -728,9 +733,9 @@
 
   .todoRow {
     grid-template-columns: auto minmax(0, 1fr) auto auto;
-    gap: 12px;
-    min-height: 68px;
-    padding: 14px 16px;
+    gap: 10px;
+    min-height: 54px;
+    padding: 10px 14px;
   }
 
   .todoPrice {
@@ -786,8 +791,8 @@
   }
 
   .iconButton {
-    width: 36px;
-    min-height: 36px;
+    width: 32px;
+    min-height: 32px;
   }
 
   .modalActions {
